@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cskaoyan.mapper.ManufactureMapper">
+    <resultMap id="BaseResultMap" type="com.cskaoyan.pojo.Manufacture">
+        <id column="manufacture_sn" jdbcType="VARCHAR" property="manufactureSn"/>
+        <result column="order_id" jdbcType="VARCHAR" property="orderId"/>
+        <result column="technology_id" jdbcType="VARCHAR" property="technologyId"/>
+        <result column="launch_quantity" jdbcType="INTEGER" property="launchQuantity"/>
+        <result column="begin_date" jdbcType="TIMESTAMP" property="beginDate"/>
+        <result column="end_date" jdbcType="TIMESTAMP" property="endDate"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        custom_id, custom_name, full_name, address, fax, email, owner_name, owner_tel, status,
+        note
+    </sql>
+</mapper>
